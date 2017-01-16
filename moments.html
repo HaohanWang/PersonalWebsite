@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Wang @ LTI CMU</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Haohan Wang LTI CMU" />
+		<meta name="keywords" content="Haohan, Wang, LTI, CMU, Computational Biology, Machine Learning" />
+		<meta name="author" content="Haohan Wang" />
+
+		<!--
+		//////////////////////////////////////////////////////
+
+		FREE HTML5 TEMPLATE
+		DESIGNED & DEVELOPED by FREEHTML5.CO
+
+		Website: 		http://freehtml5.co/
+		Email: 			info@freehtml5.co
+		Twitter: 		http://twitter.com/fh5co
+		Facebook: 		https://www.facebook.com/fh5co
+
+		//////////////////////////////////////////////////////
+		-->
+
+		<!-- Facebook and Twitter integration -->
+		<meta property="og:title" content=""/>
+		<meta property="og:image" content=""/>
+		<meta property="og:url" content=""/>
+		<meta property="og:site_name" content=""/>
+		<meta property="og:description" content=""/>
+		<meta name="twitter:title" content="" />
+		<meta name="twitter:image" content="" />
+		<meta name="twitter:url" content="" />
+		<meta name="twitter:card" content="" />
+
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+		<!-- Animate.css -->
+		<link rel="stylesheet" href="css/animate.css">
+		<!-- Icomoon Icon Fonts-->
+		<link rel="stylesheet" href="css/icomoon.css">
+		<!-- Bootstrap  -->
+		<link rel="stylesheet" href="css/bootstrap.css">
+
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- Modernizr JS -->
+		<script src="js/modernizr-2.6.2.min.js"></script>
+		<!-- FOR IE9 below -->
+		<!--[if lt IE 9]>
+		<script src="js/respond.min.js"></script>
+		<![endif]-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+		<script type="text/javascript">
+			// DATABASE
+			var deadlines = new Array();
+
+			/* add yours here
+			deadlines.push({
+			venue: "",
+			area: "",
+			deadline: moment("2000-00-00 00:00:00 +0000", "YYYY-MM-DD HH:mm:ss Z"),
+			//website: "",
+			//approx: 1,
+			});
+			*/
+
+			// Machine Learning
+			deadlines.push({
+				venue : "ICML",
+				area : "Machine Learning",
+				deadline : moment("2017-02-24 23:59:00 +0000", "YYYY-MM-DD HH:mm:ss Z"),
+				website : "",
+				//approx : 1,
+			});
+
+			deadlines.push({
+				venue : "UAI",
+				area : "Machine Learning",
+				deadline : moment("2017-03-01 23:59:00 +0000", "YYYY-MM-DD HH:mm:ss Z"),
+				approx : 1,
+			});
+
+			deadlines.push({
+				venue : "NIPS",
+				area : "Machine Learning",
+				deadline : moment("2017-05-20 16:00:00 -0800", "YYYY-MM-DD HH:mm:ss Z"),
+				website : "https://nips.cc/Conferences/2017",
+				approx : 1,
+			});
+
+			deadlines.push({
+				venue : "AISTATS",
+				area : "Machine Learning",
+				deadline : moment("2016-10-09 23:59:00 +0000", "YYYY-MM-DD HH:mm:ss Z"),
+				website : "http://www.aistats.org/",
+				approx : 1,
+			});
+
+			/*
+			deadlines.push({
+			venue: "ICLR Abstract",
+			area: "Deep Learning",
+			deadline: moment("2016-11-12 17:00:00 -0500", "YYYY-MM-DD HH:mm:ss Z"),
+			website: "http://www.iclr.cc/doku.php",
+			approx: 1,
+			});
+
+			deadlines.push({
+			venue: "ICLR Full Paper",
+			area: "Deep Learning",
+			deadline: moment("2016-11-19 17:00:00 -0500", "YYYY-MM-DD HH:mm:ss Z"),
+			website: "http://www.iclr.cc/doku.php",
+			approx: 1,
+			});
+			*/
+
+			// Theory
+			/*
+			deadlines.push({
+				venue : "COLT",
+				area : "Theory",
+				deadline : moment("2017-02-19 23:59:00 -1100", "YYYY-MM-DD HH:mm:ss Z"),
+				approx : 1,
+			});
+
+			deadlines.push({
+				venue : "STOC",
+				area : "Theory",
+				deadline : moment("2016-11-02 23:59:00 -1100", "YYYY-MM-DD HH:mm:ss Z"),
+				approx : 1,
+			});
+
+			deadlines.push({
+				venue : "FOCS",
+				area : "Theory",
+				deadline : moment("2017-04-05 23:59:00 -1100", "YYYY-MM-DD HH:mm:ss Z"),
+				approx : 1,
+			});
+
+			deadlines.push({
+				venue : "SODA",
+				area : "Theory",
+				deadline : moment("2016-07-06 16:59:00 -0400", "YYYY-MM-DD HH:mm:ss Z"),
+				//approx: 1,
+			});
+
+			deadlines.push({
+			venue: "ALT",
+			area: "Theory",
+			deadline: moment("2016-02-19 23:59:00 -1100", "YYYY-MM-DD HH:mm:ss Z"),
+			approx: 1,
+			});
+			*/
+
+			// AI
+			deadlines.push({
+				venue : "IJCAI",
+				area : "Artificial Intelligence",
+				deadline : moment("2016-02-19 23:59:00 -1200", "YYYY-MM-DD HH:mm:ss Z"),
+				website : "http://ijcai-17.org/",
+			});
+
+			deadlines.push({
+				venue : "AAAI",
+				area : "Artificial Intelligence",
+				deadline : moment("2016-09-09 23:59:00 -1200", "YYYY-MM-DD HH:mm:ss Z"),
+				website : "http://www.aaai.org/Conferences/AAAI/aaai17.php",
+			});
+
+			// Data Mining
+			deadlines.push({
+				venue : "SIGMOD",
+				area : "Data Mining",
+				deadline : moment("2016-07-15 23:59:00 -0800", "YYYY-MM-DD HH:mm:ss Z"),
+				website : "http://sigmod2017.org/deadlines/",
+			});
+
+			deadlines.push({
+				venue : "ICDE",
+				area : "Data Mining",
+				deadline : moment("2016-05-24 23:59:00 -0800", "YYYY-MM-DD HH:mm:ss Z"),
+				website : "https://www.waset.org/conference/2017/11/dubai/ICDE",
+			});
+
+			deadlines.push({
+				venue : "KDD",
+				area : "Data Mining",
+				deadline : moment("2017-02-12 23:59:00 -0800", "YYYY-MM-DD HH:mm:ss Z"),
+				website : "",
+				approx : 1,
+			});
+
+			/*
+			 deadlines.push({
+			 venue: "WSDM Abstract",
+			 area: "Data Mining",
+			 deadline: moment("2016-07-10 00:00:00 +0000", "YYYY-MM-DD HH:mm:ss Z"),
+			 website: "http://www.wsdm-conference.org/2016/",
+			 approx: 1,
+			 });
+			 */
+
+			deadlines.push({
+				venue : "WSDM",
+				area : "Data Mining",
+				deadline : moment("2016-07-31 23:59:00 +0000", "YYYY-MM-DD HH:mm:ss Z"),
+				website : "http://www.wsdm-conference.org/2017/calls/papers/",
+				//approx: 1,
+			});
+
+			/*
+			 deadlines.push({
+			 venue: "WWW Abstract",
+			 area: "Data Mining",
+			 deadline: moment("2016-10-10 23:59:00 -1000", "YYYY-MM-DD HH:mm:ss Z"),
+			 website: "http://www2016.ca/",
+			 });
+			 */
+			
+			/*
+			deadlines.push({
+				venue : "WWW",
+				area : "Data Mining",
+				deadline : moment("2016-10-17 23:59:00 -1000", "YYYY-MM-DD HH:mm:ss Z"),
+				website : "http://www.www2017.com.au/",
+				approx : 1,
+			});
+
+			deadlines.push({
+				venue : "ICDM",
+				area : "Data Mining",
+				deadline : moment("2016-06-17 23:59:00 -0700", "YYYY-MM-DD HH:mm:ss Z"),
+				website : "http://icdm2016.eurecat.org/call-for-papers/",
+				//approx: 1,
+			});*/
+
+			// NLP
+			/*
+			deadlines.push({
+				venue : "ACL",
+				area : "Natual Language Processing",
+				deadline : moment("2017-03-18 00:00:00 -0800", "YYYY-MM-DD HH:mm:ss Z"),
+				website : "",
+				approx : 1,
+			}); */
+
+			deadlines.push({
+				venue : "EMNLP",
+				area : "Natual Language Processing",
+				deadline : moment("2016-06-03 23:59:00 -0700", "YYYY-MM-DD HH:mm:ss Z"),
+				website : "http://www.emnlp2016.net/",
+				//approx: 1,
+			});
+
+			// Vision
+			deadlines.push({
+				venue : "CVPR",
+				area : "Computer Vision",
+				deadline : moment("2016-11-11 18:00:00 -0700", "YYYY-MM-DD HH:mm:ss Z"),
+				website : "http://cvpr2017.thecvf.com/",
+				//approx: 1,
+			});
+
+			deadlines.push({
+				venue : "I/ECCV",
+				area : "Computer Vision",
+				deadline : moment("2016-03-14 00:00:00 +0000", "YYYY-MM-DD HH:mm:ss Z"),
+				website : "",
+				approx : 1,
+			});
+
+			/*
+			// System
+			deadlines.push({
+			venue: "OSDI Full Paper",
+			area: "Systems",
+			deadline: moment("2016-05-10 18:00:00 -0400", "YYYY-MM-DD HH:mm:ss Z"),
+			website: "https://www.usenix.org/conference/osdi16",
+			});
+
+			deadlines.push({
+			venue: "OSDI Abstract",
+			area: "Systems",
+			deadline: moment("2016-05-03 18:00:00 -0400", "YYYY-MM-DD HH:mm:ss Z"),
+			website: "https://www.usenix.org/conference/osdi16",
+			});
+
+			deadlines.push({
+			venue: "ATC",
+			area: "Systems",
+			deadline: moment("2016-02-01 23:59:00 +0000", "YYYY-MM-DD HH:mm:ss Z"),
+			website: "https://www.usenix.org/conference/atc16",
+			});
+
+			deadlines.push({
+			venue: "Eurosys Abstract",
+			area: "Systems",
+			deadline: moment("2016-10-16 23:59:00 +0000", "YYYY-MM-DD HH:mm:ss Z"),
+			website: "http://eurosys16.doc.ic.ac.uk/",
+			approx: 1
+			});
+
+			deadlines.push({
+			venue: "Eurosys Full Paper",
+			area: "Systems",
+			deadline: moment("2016-10-23 23:59:00 +0000", "YYYY-MM-DD HH:mm:ss Z"),
+			website: "http://eurosys16.doc.ic.ac.uk/",
+			approx: 1,
+			});
+			*/
+
+			
+			// CompBio
+			deadlines.push({
+			venue: "RECOMB",
+			area: "Computational Biology",
+			deadline: moment("2016-10-26 00:00:00 -0800", "YYYY-MM-DD HH:mm:ss Z"),
+			website: "http://recomb2016.bioinformatics.ucla.edu/",
+			approx: 1
+			});
+
+			deadlines.push({
+			venue: "ISMB",
+			area: "Computational Biology",
+			deadline: moment("2017-01-16 23:59:00 +0000", "YYYY-MM-DD HH:mm:ss Z"),
+			website: "https://www.iscb.org/ismbeccb2015-keydates",
+			//approx: 1,
+			});
+
+			deadlines.push({
+			venue: "PSB",
+			area: "Computational Biology",
+			deadline: moment("2016-07-27 23:59:00 +0000", "YYYY-MM-DD HH:mm:ss Z"),
+			website: "http://psb.stanford.edu/",
+			approx: 1,
+			});
+			
+
+			// HELPER FUNCTIONS
+			var timeDescription = function(x) {
+				return x.format("MM/DD/YYYY h:mm:ss A");
+			}
+			var timeLeftDescription = function(t) {
+				if (t < 0)
+					t = 0;
+				var tseconds = t / 1000;
+				var seconds = Math.floor(tseconds) % 60;
+				var tminutes = tseconds / 60;
+				var minutes = Math.floor(tminutes) % 60;
+				var thours = tminutes / 60;
+				var hours = Math.floor(thours) % 24;
+				var tdays = thours / 24;
+				var days = Math.floor(tdays);
+				return days + " days, " + hours + "h " + minutes + "m " + seconds + "s";
+			}
+			// Display function, called every second or so
+			function refreshDisplay() {
+				var d = moment();
+				$("#currtime").text("Current time: " + timeDescription(d));
+
+				// calculate and display deadlines
+				for (var i = 0; i < deadlines.length; i++) {
+					var dl = deadlines[i];
+					var timeLeft = dl.deadline - d;
+
+					if (timeLeft <= 0) {
+						continue;
+					}
+
+					warningString = "";
+					if (dl.approx == 1) {
+						warningString = "based on previous year!";
+					}
+
+					prefix = "";
+					suffix = "";
+					if ("website" in dl) {
+						prefix = "<a class=\"sd\" href=\"" + dl.website + "\">";
+						suffix = "</a>";
+					}
+
+					$("#deadline" + i).html(prefix + "<div class=\"tld\">" + timeLeftDescription(timeLeft) + "</div>" + "<div class=\"vd\">" + dl.venue + "</div>" + "<div class=\"ad\">" + dl.area + "</div>" + "<div class=\"td\">Deadline: " + timeDescription(dl.deadline) + "</div>" + "<div class=\"wd\">" + warningString + "</div>" + suffix);
+				}
+			}
+
+			// int main(){}
+			$(document).ready(function() {
+				deadlines.sort(function(a, b) {
+					return a.deadline - b.deadline;
+				});
+				// create divs for all deadlines and insert into DOM
+				for (var i = 0; i < deadlines.length; i++) {
+					var d = moment();
+					var dl = deadlines[i];
+					var timeLeft = dl.deadline - d;
+
+					if (timeLeft <= 0) {
+						continue;
+					}
+					$("<div class=dd id=deadline" + i + "></div>").appendTo("div#deadlinesdiv");
+					var divid = "#deadline" + i;
+
+					$(divid).hide();
+					$(divid).fadeIn(100 * (i + 1), function() {
+					});
+					// create a nice fade in effect
+				}
+
+				// set up deadline timer to redraw
+				setInterval(function() {
+					refreshDisplay();
+				}, 1000);
+
+				// draw!
+				refreshDisplay();
+			});
+		</script>
+
+		<style type="text/css">
+			/* Some resetting */
+			body {
+				font-family: Verdana, Helvetica, sans-serif;
+				font-size: 12px;
+				padding: 0;
+				margin: 0;
+				background-color: white;
+				color: #222;
+			}
+
+			/* Main content div */
+			#surround {
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 50px;
+				width: 600px;
+				background-color: white;
+			}
+
+			/* Div that contains all deadlines */
+			#deadlinesdiv {
+			}
+
+			#currtime {
+				font-size: 14px;
+			}
+			#bottompart {
+				text-align: center;
+			}
+
+			/* Page title */
+			h1 {
+				display: inline;
+				margin-right: 10px;
+				font-size: 35px;
+			}
+
+			/* Maintained by @karpathy */
+			#signature {
+				position: absolute;
+				bottom: auto;
+				right: 0;
+				text-align: center;
+				padding-bottom: 15px;
+				padding-right: 30px;
+				/*font-size: 14px;*/
+			}
+
+			/* The cells that contain each deadline */
+			.dd {
+				padding: 10px;
+				margin-bottom: 3px;
+				background-color: #EEE;
+				border: 1px solid #DDD;
+				cursor: pointer;
+				position: relative;
+			}
+			.dd:hover {
+				background-color: #DDD;
+				border: 1px solid #AAA;
+				cursor: default;
+			}
+			/* website */
+			a:link {
+				color: black;
+				text-decoration: none;
+			}
+			a:visited {
+				color: black;
+				text-decoration: none;
+			}
+			/* Time left description div */
+			.tld {
+				float: right;
+				font-size: 18px;
+				font-weight: bold;
+				margin-top: 16px;
+			}
+
+			/* Area description div */
+			.ad {
+				font-family: monospace;
+			}
+
+			/* Time description div */
+			.td {
+			}
+
+			/* Venue description div */
+			.vd {
+				font-weight: bold;
+				font-size: 16px;
+			}
+
+			/* Warning div */
+			.wd {
+				position: absolute;
+				bottom: 10px;
+				right: 8px;
+				color: #700;
+				font-size: 10px;
+			}
+			#musiclink a {
+				color: #AAA;
+				position: fixed;
+				bottom: 30px;
+				right: 30px;
+			}
+		</style>
+
+	</head>
+	<body>
+		<nav id="fh5co-main-nav" role="navigation">
+			<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle active"><i></i></a>
+			<div class="js-fullheight fh5co-table">
+				<div class="fh5co-table-cell js-fullheight">
+					<ul>
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="publications.html">Publications</a>
+						</li>
+						<li>
+							<a href="career.html">Career</a>
+						</li>
+						<li>
+							<a href="moments.html">Countdowns</a>
+						</li>
+						<li>
+							<a href="contact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div id="fh5co-page">
+			<header>
+				<div class="container">
+					<div class="fh5co-navbar-brand">
+						<a class="fh5co-logo" href="index.html">Haohan Wang's Web Page</a>
+					</div>
+					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+				</div>
+			</header>
+			<div id="fh5co-team-section">
+				<div id="surround">
+					<h1>Academic Countdown</h1>
+					<div id="currtime"></div>
+					<div id="deadlinesdiv"></div>
+					<br />
+				</div>
+
+				<div id="signature">
+					Created by <a href="https://twitter.com/karpathy">@karpathy</a>, modified by xz, hacked by yyl, then hacked again by hw
+				</div>
+			</div>
+			<!-- End: fh5co-services-section -->
+			<footer>
+				<div id="footer" class="fh5co-border-line">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6">
+								<p>
+									Copyright 2016
+								</p>
+							</div>
+							<div class="col-md-6 social-text-align">
+								<p class="fh5co-social-icons">
+									<a href="https://www.linkedin.com/in/haohanwang" target="_blank"><i class="icon-linkedin-with-circle"></i></a>									<a href="https://github.com/HaohanWang" target="_blank"><i class="icon-github-with-circle"></i></a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<!-- jQuery -->
+		<script src="js/jquery.min.js"></script>
+		<!-- jQuery Easing -->
+		<script src="js/jquery.easing.1.3.js"></script>
+		<!-- Bootstrap -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Waypoints -->
+		<script src="js/jquery.waypoints.min.js"></script>
+		<!-- Parallax Stellar -->
+		<script src="js/jquery.stellar.min.js"></script>
+
+		<!-- Main JS (Do not remove) -->
+		<script src="js/main.js"></script>
+
+	</body>
+</html>
+
