@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Select-Additive Learning</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Select-Additive Learning, Improving Generalization in Multimodal Sentiment Analysis" />
+	<meta name="keywords" content="multimodal, sentiment analysis, select-additive learning, SAL" />
+	<meta name="author" content="Haohan Wang" />
+
+  <!-- 
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by FREEHTML5.CO
+		
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<link rel="stylesheet" href="css/style.css">
+
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+	<nav id="fh5co-main-nav" role="navigation">
+		<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle active"><i></i></a>
+		<div class="js-fullheight fh5co-table">
+			<div class="fh5co-table-cell js-fullheight">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="publications.html">Publications</a></li>
+					<li><a href="career.html">Career</a></li>
+					<!--<li><a href="moments.html">Countdowns</a></li>-->
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<div id="fh5co-page">
+		<header>
+			<div class="container">
+				<div class="fh5co-navbar-brand">
+					<a class="fh5co-logo" href="index.html">SAL</a>
+				</div>
+				<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+			</div>
+		</header>
+		<div id="fh5co-services-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center heading-section">
+						
+						<h2>Select-Additive Learning</h2>
+						<h3>Improving Generalization in Multimodal Sentiment Analysis</h3>
+						<div class="row"><a href="https://au.arxiv.org/pdf/1609.05244.pdf">PDF avaliable here</a></div>
+						<div class="row"><img src="images/sal.png"/ height="300"></div>
+					</div>
+				</div>
+				<div class="row fh5co-services-single">
+					<div class="col-md-6 animate-box">
+						<div class="fh5co-services">
+							<i class="icon-heart"></i>
+							<div class="holder-section">
+								<h3>Introduction</h3>
+								<p align="justify">
+									Multimodal sentiment analysis is drawing an increasing
+amount of attention these days. It enables mining of opinions
+in video reviews which are now available aplenty on online
+platforms. However, multimodal sentiment analysis has
+only a few high-quality data sets annotated for training machine
+learning algorithms. These limited resources restrict
+the generalizability of models, where, for example, the unique
+characteristics of a few speakers (e.g., wearing glasses) may
+become a confounding factor for the sentiment classification
+task. In this paper, we propose a Select-Additive Learning
+(SAL) procedure that improves the generalizability of trained
+neural networks for multimodal sentiment analysis. In our
+experiments, we show that our SAL approach improves prediction
+accuracy significantly in all three modalities (verbal,
+acoustic, visual), as well as in their fusion. Our results show
+that SAL, even when trained on one dataset, achieves good
+generalization across two new test datasets
+								</p>
+								<ul>
+									<li>multimodal</li>
+									<li>sentiment analysis</li>
+									<li>cross-datasets</li>
+									<li>generalization</li>
+									<li>cross-individual</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="fh5co-services">
+							<i class="icon-video"></i>
+							<div class="holder-section">
+								<h3>Data Sets 	&amp; Feature Description</h3>
+								<p><a href="http://www.cs.cmu.edu/~haohanw/SAL/SAL_features.zip">Download the extracted features for SAL paper</a></p>
+								<p>
+									The data set is constructed from three different classical multimodal sentiment analysis data sets, namely,
+									<ul>
+										<li><a href="https://web.eecs.umich.edu/~mihalcea/papers/perezrosas.is13.pdf">MOSI</a> 1796 utterances from 93 unique speakers</li>
+										<li><a href="https://arxiv.org/abs/1606.06259">MOUD</a> 450 utterances from 55 unique speakers</li>
+										<li><a href="http://dl.acm.org/citation.cfm?id=2070509">YouTube</a> 195 utterances from 47 unique speakers</li>
+									</ul>
+								</p>
+								<p>
+									There are five files associated with each dataset:
+									<ul>
+										<li><b>vocal:</b> vocal features extracted (18000 features)</li>
+										<li><b>acoustic:</b> acoustic features extracted (1950 features)</li>
+										<li><b>visual:</b> visual features extracted (2075 features)</li>
+										<li><b>subject_id:</b> identification of the speaker. (there is no speaker overlapped across data sets, despite that every dataset labels the speaker starting from 1)</li>
+										<li><b>sentiment_label:</b> the label of the sentiment associated with the utterance. (1 for positive, 0 for negative)</li>
+									</ul>
+								</p>
+								<p>Please see the original paper and its <a href="http://www.cs.cmu.edu/~haohanw/document/sal_supp.pdf">supplementary file</a> for more information</p>
+								<i><p>This is the description of the data sets in SAL paper, you may want to contact the data maintainers for latest information.
+										</p></i>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="fh5co-services">
+							<i class="icon-laptop"></i>
+							<div class="holder-section">
+								<h3>Implementation</h3>
+								<p>You can start with the <a href="https://github.com/HaohanWang/SelectAdditiveLearning">implementation of Select-Additive Learning</a> and build upon it if you want to.
+									</p>
+									<ul>
+									<li><b>pretrainModel/model.py</b> Methods to pretrain the model.</li>
+									<li><b>model/run.py</b> entry point of the main method.</li>
+									<li><b>model/SALModel.py</b> detailed implementation of the main method.</li>
+									</ul>
+								</ol>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="col-md-6 animate-box">
+						<div class="fh5co-services">
+							<i class="icon-mobile"></i>
+							<div class="holder-section">
+								<h3>Mobile Optimization</h3>
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="fh5co-services">
+							<i class="icon-gears"></i>
+							<div class="holder-section">
+								<h3>Search Engine Optimization</h3>
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+							</div>
+						</div>
+					</div> -->
+					<div class="col-md-6 animate-box">
+						<div class="fh5co-services">
+							<i class="icon-piechart"></i>
+							<div class="holder-section">
+								<h3>Other Information &amp; Contact</h3>
+								<p>Links:</p>
+								<ul>
+									<li>reporteded by a <a href="http://www.jiqizhixin.com/article/1548">Chinese Media</a></li>
+								</ul>
+								<p>Contact:
+									<a href="http://www.cs.cmu.edu/~haohanw/">Haohan Wang</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End: fh5co-services-section -->
+		<footer>
+			<div id="footer" class="fh5co-border-line">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<p>Copyright 2017</p>
+						</div>
+						<div class="col-md-6 social-text-align">
+							<p class="fh5co-social-icons">
+								<a href="https://twitter.com/HaohanWang" target="_blank"><i class="icon-twitter-with-circle"></i></a>
+								<a href="https://www.linkedin.com/in/haohanwang" target="_blank"><i class="icon-linkedin-with-circle"></i></a>
+								<a href="https://github.com/HaohanWang" target="_blank"><i class="icon-github-with-circle"></i></a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
+
