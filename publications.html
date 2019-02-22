@@ -3,15 +3,97 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js">
+<html>
+
+
+<script language="javascript" type="text/javascript">
+
+ var state = 'none';
+ function showhide(layer_ref) {
+ if (state == 'block') {
+ state = 'none';
+ }
+ else {
+ state = 'block';
+ }
+
+ if (document.all) { //IS IE 4 or 5 (or 6 beta)
+ eval( "document.all." + layer_ref + ".style.display = state");
+ }
+ if (document.layers) { //IS NETSCAPE 4 or below
+ document.layers[layer_ref].display = state;
+ }
+ if (document.getElementById &&!document.all) {
+ hza = document.getElementById(layer_ref);
+ hza.style.display = state;
+ }
+ }
+
+ function show(layer_ref) {
+ state = 'block';
+
+ if (document.all) { //IS IE 4 or 5 (or 6 beta)
+ eval( "document.all." + layer_ref + ".style.display = state");
+ }
+ if (document.layers) { //IS NETSCAPE 4 or below
+ document.layers[layer_ref].display = state;
+ }
+ if (document.getElementById &&!document.all) {
+ hza = document.getElementById(layer_ref);
+ hza.style.display = state;
+ }
+ }
+
+ function hide(layer_ref) {
+ state = 'none';
+
+ if (document.all) { //IS IE 4 or 5 (or 6 beta)
+ eval( "document.all." + layer_ref + ".style.display = state");
+ }
+ if (document.layers) { //IS NETSCAPE 4 or below
+ document.layers[layer_ref].display = state;
+ }
+ if (document.getElementById &&!document.all) {
+ hza = document.getElementById(layer_ref);
+ hza.style.display = state;
+ }
+ }
+
+
+ function sDiv(pass) {
+ var divs = document.getElementsByTagName('div');
+ for(i=0;i<divs.length;i++)
+ {
+ 	if(divs[i].id.match('tag'))
+ 	{
+
+ 	if(divs[i].id.match(pass))
+ 	{
+ 		show(divs[i].id);
+ 	}
+ 	if(!divs[i].id.match(pass))
+ 	{
+ 		hide(divs[i].id);
+ 	}
+
+
+ 	}
+ }
+
+ }
+
+</script>
+
+
+
 	<!--<![endif]-->
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Wang @ LTI CMU</title>
+		<title>Haohan Wang's Publications List</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="Haohan Wang LTI CMU" />
-		<meta name="keywords" content="Haohan, Wang, LTI, CMU, Computational Biology, Machine Learning" />
+		<meta name="keywords" content="Haohan Wang, LTI, CMU, Deep Learning, Computational Biology, Machine Learning" />
 		<meta name="author" content="Haohan Wang" />
 
 		<!--
@@ -89,12 +171,27 @@
 			<div id="fh5co-portfolio-section">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-10 col-md-offset-1 text-center heading-section">
+						<div class="col-md-12 col-md-offset-1 text-center heading-section">
 							<h2>Publications</h2>
 						</div>
+
+						<div class="col-md-12 col-md-offset-1 text-center heading-section"><h3 align="left">Year:
+							[<a href="#2019">2019</a>] 
+							[<a href="#2018">2018</a>] 
+							[<a href="#2017">2017</a>] 
+							[<a href="#2016">2016</a>]  
+							[<a href="#pre2000">Previous</a>]</h3>
+						<h3 align="left">Topic:
+							[<a href="javascript:sDiv('tag');">All</a>] 
+							[<a href="javascript:sDiv('tagML');">ML & DL</a>]  
+							[<a href="javascript:sDiv('tagStat');">Statistics</a>]  
+							[<a href="javascript:sDiv('tagCB');">Computational Biology</a>]  </h3>
+							</div>
+							<br>
+
 					</div>
 					<div class="row">
-						<div class="col-md-10 col-md-offset-1 text-center heading-section">
+						<!--<div class="col-md-10 col-md-offset-1 text-center heading-section">
 							<h3 align="left">Recent Manuscripts</h3>
 							<ul align="left">
 								<li>
@@ -119,20 +216,57 @@
 								</li>
 							</ul>
 							<p>Feel free to contact me if you are interested in reading the manuscripts. There are no arXiv verions because most of them are journal submissions</p>
-						</div>
-						<div class="col-md-10 col-md-offset-1 text-center heading-section">
-							<h3 align="left">Publications</h3>
-							<ul align="left">
-								<li>
+						</div>-->
+						<div class="col-md-12 col-md-offset-1 text-center heading-section">
+<a name="2019"></a>
+      <ul align="left">
+<div id="tagML_Wang-iclr19"><li><b>Wang H</b>, He Z., Lipton Z. C. , and Xing E. P., <span style="font-weight: bold;"><a href="http://www.cs.cmu.edu/~haohanw/papers/2019/Wang_etal_ICLR19.pdf">Learning Robust Representations by Projecting Superficial Statistics Out</a></span>,<i>
+Proceedings of Seventh International Conference on Learning Representations
+</i>(ICLR 2019).
+</li></div>
+<div
+ id="tagML_Wang-aaai19"><li><b>Wang H</b>, Sun D., and Xing, E. P. <span style="font-weight: bold;"><a
+ href="http://www.cs.cmu.edu/~haohanw/papers/2019/Wang_etal_AAAI19.pdf">What If We Simply Swap the Two Text Fragments? A Straightforward yet Effective Way to Test the Robustness of Methods to Confounding Signals in Nature Language Inference Tasks</a></span>,<i>
+Proceedings of Thirty-third AAAI Conference on Artificial Intelligence
+ </i>(AAAI 2019).
+	  </li></div>
+<div
+ id="tagML_tagCB_Wang-psb19a"><li><b>Wang H</b>, Wu Z., and Xing E. P., <span style="font-weight: bold;"><a
+ href="http://www.cs.cmu.edu/~haohanw/papers/2019/Wang_etal_PSB19a.pdf">Removing Confounding Factors Associated Weights in Deep Neural Networks Improves the Prediction Accuracy for Healthcare Applications</a></span>,<i>
+Proceedings of 24th Pacific Symposium on Biocomputing
+ </i>(PSB 2019).</li></div>
+<div
+ id="tagML_tagCB_Wang-psb19b"><li><b>Wang H</b>, Liu X., Tao Y., Ye W., Jin Q., Cohen W. W., and Xing E. P., <span style="font-weight: bold;"><a
+ href="http://www.cs.cmu.edu/~haohanw/papers/2019/Wang_etal_PSB19b.pdf">Automatic Human-like Mining and Constructing Reliable Genetic Association Database with Deep Reinforcement Learning</a></span><b>,</b><i>
+Proceedings of 24th Pacific Symposium on Biocomputing
+ </i>(PSB 2019).
+	  </li></div>
+<div
+ id="tagML_Xiao-nd19"><li>Xiao Y, Chen D, Wei S, Li Q, <b>Wang H</b>, and Xu M. <span style="font-weight: bold;"><a
+ href="http://www.cs.cmu.edu/~haohanw/papers/2019/Xiao_etal_nd19b.pdf">Rumor propagation dynamic model based on evolutionary game and anti-rumor</a></span>,<i>
+Nonlinear Dynamics. 2019 Jan 1;95(1):523-39., 
+ </i> </li></div>
+</ul>
+<a name="2018"></a>
+      <ul align="left">
+<div
+ id="tagML_tagStat_tagCB_Wang-bioinfo18"><li><b>Wang H</b>, Lengerich B. J., Aragam B., and Xing E. P., <span style="font-weight: bold;"><a
+ href="http://www.cs.cmu.edu/~haohanw/papers/2018/Wang_etal_bioinfo18.pdf">Precision Lasso: Accounting for Correlations and Linear Dependencies in High-Dimensional Genomic Data</a></span>,<i> Bioinformatics, PMID: 30184048 DOI:10.1093/bioinformatics/bty750 , 2018.
+ </i></li></div>
+<div
+ id="tagCB_Wang-methods18a"><li><b>Wang H</b>, Liu X., Xiao Y., Xu M. and Xing E. P., <span style="font-weight: bold;"><a
+ href="http://www.cs.cmu.edu/~haohanw/papers/2018/Wang_etal_methods18a.pdf">Multiplex Confounding Factor Correction for Genomic Association Mapping with Squared Sparse Linear Mixed Model</a></span>,<i>
+Methods, 2018 Aug 1; 145: 33?40.
+ </i></li></div>
+<div
+ id="tagML_tagCB_Wang-methods18b"><li><b>Wang H</b>, Aragam B. and Xing E. P., <span style="font-weight: bold;"><a
+ href="http://www.cs.cmu.edu/~haohanw/papers/2018/Wang_etal_methods18b.pdf">Variable selection in heterogeneous datasets: A truncated-rank sparse linear mixed model with applications to genome-wide association studies</a></span>,<i>
+Methods, 2018 2018 Aug 1; 145: 2?9.
+ </i></li></div>
+
+						<li>
 									Yue, T., & <b>Wang, H.</b> (2018). 
 									Deep Learning for Genomics: A Concise Overview. arXiv preprint arXiv:1802.00810.
-									<ul>
-										<li> <a href="https://arxiv.org/pdf/1803.07276.pdf"> PDF </a></li>
-									</ul>
-								</li>
-								<li>
-									Wu, Z., <b>Wang, H.</b>, Cao, M., Chen, Y., & Xing, E. P. (2018). 
-									Fair Deep Learning Prediction for Healthcare Applications with Confounder Filtering. arXiv preprint arXiv:1803.07276.
 									<ul>
 										<li> <a href="https://arxiv.org/pdf/1803.07276.pdf"> PDF </a></li>
 									</ul>
